@@ -1,0 +1,44 @@
+doctype 
+html 
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Blog
+        style 
+            include ../static/blogpage.css
+    
+    body 
+
+        div.container
+            nav.navbar
+                img(src="../static/images/blog.png",width=100,height=100)
+                h1  Blogosphere Bliss
+                ul.ullist
+                    li: a(href="/") Home 
+                    li: a(href="/about") About
+            div.both
+                div.blogcontent
+                    for n in blogcont
+                        h1=n.title
+                        img(src=`${n.blogimage.url}`,width=800,height=450)
+                        p=n.body
+                    if check.active===true
+                        button(id=`${delete_blog.key}`,class="Deleteblog")  Delete Blog
+                
+                div.comment
+                    h1 Comments
+                    form(action="/addcomments",method="post")
+                        input(type="text",name="comment",placeholder="Add your comment")
+                        button(type="submit") Comment it
+                
+                    ul.commentlist 
+                        for n in commentscontent
+                            li
+                                div.commentcont
+                                    img(src="../static/images/man.png",width=60,height=60)
+                                    h3=n.user_name
+                                p=n.comment
+
+    script 
+        include ../static/index2.js

@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+}
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.86);
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > h1{
+
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.ullist{
+    list-style: none;
+    margin-bottom: 5rem;
+    width: 6rem;
+}
+
+.ullist >li{
+    padding-bottom: 1rem;
+}
+
+.ullist > li > a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+
+}
+
+.blogcontent
+{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogcontent > h1{
+    font-size: 3em;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.blogcontent > img{
+    border-radius: 2rem;
+}
+
+.blogcontent > p{
+    margin-top: 2rem;
+    font-size: 1.4em;
+    width: 80%;
+    text-align: left;
+}
+
+.comment{
+    width: 80%;
+    margin-left: 7rem;
+}
+
+form > input{
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+}
+
+form > button{
+
+    font-size: 1.1em;
+    margin-left: 1rem;
+    width: 8rem;
+    height: 2.7rem;
+    border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+::placeholder{
+    padding-left: 1rem;
+    font-size: 1.2em;
+}
+
+.commentlist
+{
+    list-style: none;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.commentcont{
+    display: flex;
+}
+
+.commentlist > li > div > h3
+{
+    padding-left: 1rem;
+}
+
+.commentlist > li
+{
+    margin-bottom: 2rem;
+}
+
+.commentlist > li > p
+{
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.Deleteblog{
+
+    font-size: 1.1em;
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2.7rem;
+    border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}

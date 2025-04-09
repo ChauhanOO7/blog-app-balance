@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+}
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.86);
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > h1{
+
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.navbar > a > button        
+{
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar > button
+{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar > a{
+    text-decoration: none;
+}
+
+.ullist{
+    list-style: none;
+    margin-bottom: 5rem;
+    width: 6rem;
+}
+
+.ullist >li{
+    padding-bottom: 1rem;
+}
+
+.ullist > li > a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+
+}
+
+#logout
+{
+    color: white;
+}
+
+.content
+{
+    background-color: rgba(0, 0, 0, 0.088);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > h1{
+    width: 8rem;
+    font-size:3em;
+}
+
+.bloglist
+{
+    list-style: none;
+    width: 70vw
+}
+
+.bloglist > li{
+    margin-bottom: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog{
+    display: flex;
+}
+
+.blog > div >h2{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.864);
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.blog > div >button{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.966);
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 1.5rem;
+}
+
+.blog > div{
+    width: 100%;
+}

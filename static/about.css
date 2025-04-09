@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.black{
+    width: 100vw;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.about
+{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.aboutcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutcontent > p
+{
+    width: 80%;
+    font-size: 1.7em;
+}
+
+.aboutcontent > button
+{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
+}
+
+.aboutcontent > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
